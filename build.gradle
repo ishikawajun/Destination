@@ -1,0 +1,48 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.1.4'
+	id 'io.spring.dependency-management' version '1.1.3'
+}
+
+group = 'com.sap.sample'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}
+
+configurations {
+	compileOnly {
+		extendsFrom annotationProcessor
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+	compileOnly 'org.projectlombok:lombok'
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	
+	// https://mvnrepository.com/artifact/com.sap.cloud.sdk.datamodel/odata-v4-core
+	implementation 'com.sap.cloud.sdk.datamodel:odata-v4-core:4.24.0'
+	
+	implementation 'com.sap.cloud.sdk.s4hana:s4hana-api-odata:4.24.0'
+	
+	// https://mvnrepository.com/artifact/com.sap.cloud.sdk.cloudplatform/scp-cf
+	implementation 'com.sap.cloud.sdk.cloudplatform:scp-cf:4.24.0'
+	
+	
+	
+	
+	
+	
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}

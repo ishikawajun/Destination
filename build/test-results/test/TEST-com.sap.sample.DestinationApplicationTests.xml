@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.sap.sample.DestinationApplicationTests" tests="1" skipped="0" failures="0" errors="0" timestamp="2023-10-01T11:33:23" hostname="MAIN-PC" time="0.981">
+  <properties/>
+  <testcase name="contextLoads()" classname="com.sap.sample.DestinationApplicationTests" time="0.981"/>
+  <system-out><![CDATA[20:33:21.661 [Test worker] INFO org.springframework.test.context.support.AnnotationConfigContextLoaderUtils -- Could not detect default configuration classes for test class [com.sap.sample.DestinationApplicationTests]: DestinationApplicationTests does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+20:33:21.788 [Test worker] INFO org.springframework.boot.test.context.SpringBootTestContextBootstrapper -- Found @SpringBootConfiguration com.sap.sample.DestinationApplication for test class com.sap.sample.DestinationApplicationTests
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.1.4)
+
+2023-10-01T20:33:22.266+09:00  WARN 13584 --- [    Test worker] ory$DuplicateJsonObjectContextCustomizer : 
+
+Found multiple occurrences of org.json.JSONObject on the class path:
+
+	jar:file:/C:/Users/Jun/.gradle/caches/modules-2/files-2.1/com.vaadin.external.google/android-json/0.0.20131108.vaadin1/fa26d351fe62a6a17f5cda1287c1c6110dec413f/android-json-0.0.20131108.vaadin1.jar!/org/json/JSONObject.class
+	jar:file:/C:/Users/Jun/.gradle/caches/modules-2/files-2.1/org.json/json/20230618/1ae16df7d556d02713e241086f878399e99260d6/json-20230618.jar!/org/json/JSONObject.class
+
+You may wish to exclude one of them to ensure predictable runtime behavior
+
+2023-10-01T20:33:22.285+09:00  INFO 13584 --- [    Test worker] c.s.sample.DestinationApplicationTests   : Starting DestinationApplicationTests using Java 17.0.7 with PID 13584 (started by 石川　純 in C:\pleiades\2023-03\workspace\destination)
+2023-10-01T20:33:22.287+09:00  INFO 13584 --- [    Test worker] c.s.sample.DestinationApplicationTests   : No active profile set, falling back to 1 default profile: "default"
+2023-10-01T20:33:23.428+09:00  INFO 13584 --- [    Test worker] o.s.b.a.w.s.WelcomePageHandlerMapping    : Adding welcome page: class path resource [static/index.html]
+2023-10-01T20:33:23.630+09:00  INFO 13584 --- [    Test worker] c.s.sample.DestinationApplicationTests   : Started DestinationApplicationTests in 1.618 seconds (process running for 3.162)
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
